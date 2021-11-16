@@ -14,6 +14,13 @@ body{
 header{
     display: flex;
     height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.header-left{
+    display: flex;
     justify-content: start;
 }
 
@@ -44,7 +51,7 @@ h1, h2, h3, h4, h5, h6, a, p{
 }
 
 h1, h2, h3, h4 {
-    font-family: "Praise";
+    font-family: "Ubuentu";
 }
 
 h5, h6 {
@@ -87,6 +94,10 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
+p:hover{
+    color: #253786;
+}
+
 /*====================
 ========Image=========
 ======================*/
@@ -125,6 +136,16 @@ img {
 }
 
 /*====================
+========Menu=========
+======================*/
+
+.menu svg{
+    height: 3em;
+    width: 3em;
+}
+
+
+/*====================
 ========Subtitle======
 ======================*/
 
@@ -145,41 +166,35 @@ img {
 .crud{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     width: 100%;
+    gap: 3em;
 }
 
-.crud__table, .crud__form{
-    min-width: 45%;
-    max-width: 45%;
-}
-
-.crud__table-grid, .crud__table-flex{
+.crud__table{
+    width: 100%;
+    height: auto;
     margin-bottom: 1em;
+}
+
+table{
     width: 100%;
 }
 
-.crud__table-grid{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-gap: 0.5em;
+th{
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 1em;
 }
 
-.crud__table-grid-element{
-    width: 100%;
-}
-
-.crud__table-flex{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-}
-
-.crud__table-flex-element{
-    flex-basis: 25%;
+td{
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 1em; 
 }
 
 .crud__form{
-    width: 100%;
+    width: 90%;
 }
 
 .crud__form-element{
