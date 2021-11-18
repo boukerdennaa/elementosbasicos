@@ -56,16 +56,12 @@ h1, h2, h3, h4, h5, h6, a, p{
     color: hsl(0, 0%, 100%);
 }
 
-h1, h2, h3, h4 {
-    font-family: "Ubuentu";
+h1, h2, h3, h4, a, th, td, p, button{
+    font-family: "Ubuntu";
 }
 
 h5, h6 {
     font-family: "Ubuntu Condensed";
-}
-
-a, td, p, button{
-    font-family: "Ubuntu";
 }
 
 h1 {
@@ -242,7 +238,6 @@ td{
 .crud__form-label--active label{
 	color: hsl(19, 100%, 50%);
 }
-
 
 .crud__form-input input, 
 .crud__form-input select {
