@@ -56,12 +56,16 @@ h1, h2, h3, h4, h5, h6, a, p{
     color: hsl(0, 0%, 100%);
 }
 
-h1, h2, h3, h4, a, th, td, p, button{
+h1, h2, h3, h4, {
     font-family: "Ubuntu";
 }
 
 h5, h6 {
     font-family: "Ubuntu Condensed";
+}
+
+a, td, p, button{
+    font-family: "Ubuntu";
 }
 
 h1 {
@@ -204,6 +208,7 @@ td{
 .four-columns, .three-columns, .two-columns {
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 
 .four-columns .crud__form-element{
@@ -216,10 +221,9 @@ td{
     width: 30%;
 }
 
-.form__radio, .form__checkbox{
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
+.two-columns .crud__form-element{
+    display: inline-block;
+    margin-bottom: 1em;
 }
 
 .crud__form-label{
